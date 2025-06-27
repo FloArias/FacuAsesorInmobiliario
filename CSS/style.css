@@ -35,14 +35,15 @@ right: 0;
 .index-header{
   position: relative;
   height: 95vh;
-  background-image: url(../media/video\ portada\ mp4.mp4);
+  background-image: url(../media/index-background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
-    
+  
 }
 
 .Header-barra-superior {
@@ -135,9 +136,9 @@ right: 0;
 
 .introduccion-inicio {
   background-color: rgba(0, 0, 0, 0.179);
-  width: 100vw; /* ocupa todo el ancho de la pantalla */
+  width: 100vw; 
   margin-left: calc(-50vw + 50%); /* para alinear si está dentro de un contenedor centrado */
-  padding: 2rem 1rem; /* opcional para darle espacio interno */
+  padding: 2rem 1rem; 
 }
 
 
