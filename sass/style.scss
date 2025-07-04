@@ -1,22 +1,14 @@
+@import "./utilities/variables";
+@import "./utilities/mixin";
+@import "./layout/header";
+@import "./layout/contacto";
+@import "./layout/propiedades";
+@import "./layout/servicios";
+@import "./layout/sobre-mi";
+@import "./layout/footer";
+
+
 /* Estilos Generales */
-
-$colorblanco: rgb(255, 255, 255, 0.958);
-$colornegro: rgba(0, 0, 0, 0.4);
-$colorazultransparente: rgba(22, 40, 237, 0.359);
-$colorcelesteclaro: #007bff;
-$box-shadow: rgba(0, 0, 0, 0.2);
-
-@mixin header-comun {
-  position: relative;
-  height: 95vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 *{
   font-family: "Outfit", sans-serif;
@@ -431,7 +423,7 @@ blockquote {
 }
 
 footer {
-    background-color: $colornegro;
+    background-color: rgb(2, 2, 2);
     height: 20wh;
     color: $colorblanco;
     text-align: center;
