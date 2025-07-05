@@ -1,0 +1,54 @@
+/* Estilos Main Propiedades */
+
+.card-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-propiedades {
+  @include tarjeta-base($color-fondo-propiedad);
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  h3 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+
+  p {
+    margin: 0.25rem 0;
+  }
+
+  .card-propiedades-precio {
+    color: $colorazultransparente;
+    font-weight: 600;
+
+    span {
+      text-decoration: line-through;
+      color: $colornegro;
+    }
+  }
+
+  .card-propiedades-button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: $colorblanco;
+    border: none;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $colorazultransparente;
+      color: $colorblanco;
+    }
+  }
+}

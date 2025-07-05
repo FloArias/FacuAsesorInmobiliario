@@ -1,0 +1,72 @@
+.footer-principal {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  color: $colorblanco;
+  padding: 2rem 1.5rem;
+  font-size: 0.95rem;
+  border-top: 2px solid $colorazultransparente;
+
+  .footer-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  .footer-info,
+  .footer-links {
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  .footer-links {
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        a {
+          color: $colorblanco;
+          text-decoration: none;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: $colorazultransparente;
+          }
+        }
+
+        .LogotipoFooter {
+          width: 2.5rem;
+          height: 2.5rem;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-top: 0.5rem;
+          transition: transform 0.3s ease;
+
+          &:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+          }
+        }
+      }
+    }
+  }
+
+  .footer-copy {
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-top: 2rem;
+  }
+}
+
+

@@ -1,64 +1,17 @@
-/* Estilos Generales */
-*{
-  font-family: "Outfit", sans-serif;
-  box-sizing: border-box;
-    
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-} 
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.wp-logo{
-width: 4rem;
-position: fixed;
-bottom: 0;
-right: 0;
-}
-
-.navbar-nav .nav-link:hover {
-  background-color: rgba(22, 40, 237, 0.359); 
-  border-radius: 0.5rem;
-  transition: background-color 0.2s ease;
-  color: rgb(255, 255, 255);
-}
-
 /* Estilos Header Index */
 
-.index-header{
-  position: relative;
-  height: 95vh;
+.index-header {
+  @include header-comun;
   background-image: url(../media/index-background.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
 }
 
 .Header-barra-superior {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 3;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: $colornegro;
   font-size: 1rem;
-  
 }
 
 .Logotipo {
@@ -71,21 +24,20 @@ right: 0;
 
 .navegacion-superior {
   display: flex;
-}
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
 
-.navegacion-superior ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
+    li {
+      margin: 0 1rem;
 
-.navegacion-superior li {
-  margin: 0 1rem;
-}
-
-.navegacion-superior ul li a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
+      a {
+        color: $colorblanco;
+        text-decoration: none;
+      }
+    }
+  }
 }
 .header-index {
   display: flex;
@@ -101,7 +53,7 @@ right: 0;
   line-height: 1.2;
   margin-bottom: 1rem;
   max-width: 90%;
-  color: rgba(255, 255, 255, 0.965);
+  color: $colorblanco;
 }
 
 .index-parrafoHeader {
@@ -109,12 +61,12 @@ right: 0;
   line-height: 1.5;
   max-width: 90%;
   margin-bottom: 1.5rem;
-  color: rgba(255, 255, 255, 0.958);
+  color: $colorblanco;
 }
 
 .button-header {
   width: 15rem;
-  background-color: rgb(255, 255, 255);
+  background-color: $colorblanco;
   font-size: 1.1rem;
   font-weight: 600;
   padding: 0.75rem 2rem;
@@ -122,78 +74,42 @@ right: 0;
   border-radius: 2rem;                 
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-
-    
+  box-shadow: 0 4px 10px $box-shadow;
 }
 
 .button-header:hover {
-  background-color: #2823c85e;           /* Un tono mas oscuro al pasar el mouse */
+  background-color: $colorazultransparente;           /* Un tono mas oscuro al pasar el mouse */
   transform: scale(1.05);              /* Efecto de agrandamiento sutil */
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3); /* Sombra mas marcada */
-  
+  box-shadow: 0 6px 14px $colornegro; /* Sombra mas marcada */
 }
 
 .introduccion-inicio {
-  background-color: rgba(0, 0, 0, 0.179);
+  background-color: $colornegro;
   width: 100vw; 
   margin-left: calc(-50vw + 50%); /* para alinear si está dentro de un contenedor centrado */
   padding: 2rem 1rem; 
 }
 
-
 /*Estilo Header Sobre Mi*/
 
 .sobre-mi-header {
-  position: relative;
-  height: 95vh;
+  @include header-comun;
   background-image: url(../media/Sobre-mi.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 /*Estilo Header - Contacto*/
 .contacto-header {
-  position: relative;
-  height: 95vh;
+  @include header-comun;
   background-image: url(../media/Background\ 2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 /*Estilo Header - Propiedades*/
 .propiedades-header {
-  position: relative;
-  height: 95vh;
+  @include header-comun;
   background-image: url(../media/Background\ 1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 /*Estilo Header - Servicios*/
 .servicios-header {
-  position: relative;
-  height: 95vh;
+ @include header-comun;
   background-image: url(../media/Servicios.jpg);
   filter: brightness(-50%);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
