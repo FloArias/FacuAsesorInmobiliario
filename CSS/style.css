@@ -1,4 +1,35 @@
 @charset "UTF-8";
+/* Estilos Generales */
+* {
+  font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wp-logo {
+  width: 4rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(22, 40, 237, 0.359);
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+  color: rgba(255, 255, 255, 0.958);
+}
+
 /* Estilos Header Index */
 .index-header {
   position: relative;
@@ -155,6 +186,40 @@
   filter: brightness(-50%);
 }
 
+.contacto-section {
+  background-color: #f8f9fa;
+}
+.contacto-section h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.contacto-section p.lead {
+  color: #555;
+}
+.contacto-section label {
+  font-weight: 600;
+  color: #333;
+}
+.contacto-section input,
+.contacto-section textarea {
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+.contacto-section button.btn {
+  margin-top: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.contacto-section button.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.contacto-section [data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 /* Estilos Main Propiedades */
 .card-container {
   display: flex;
@@ -216,6 +281,80 @@
 .card-propiedades .card-propiedades-button:hover {
   background-color: rgba(22, 40, 237, 0.359);
   color: rgba(255, 255, 255, 0.958);
+}
+
+/* 🔹 NUEVO: Sección introductoria */
+.intro-propiedades {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.intro-propiedades h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: #222;
+}
+.intro-propiedades p {
+  color: #555;
+}
+.intro-propiedades .btn {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.intro-propiedades .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 NUEVO: Mejora visual del listado (sin romper tu diseño) */
+#listado-propiedades {
+  background-color: #fff;
+  padding: 4rem 0;
+}
+#listado-propiedades .card-propiedades {
+  transition: transform 0.3s;
+}
+#listado-propiedades .card-propiedades:hover {
+  transform: translateY(-5px);
+}
+
+.servicio-item {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 2.5rem 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.servicio-item h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1rem;
+}
+.servicio-item p {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+.servicio-item .btn {
+  font-weight: 500;
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+.servicio-item .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.servicio-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
 img.rounded-circle {
@@ -297,38 +436,13 @@ img.rounded-circle {
   margin-top: 2rem;
 }
 
-/* Estilos Generales */
-* {
-  font-family: "Outfit", sans-serif;
-  box-sizing: border-box;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.wp-logo {
-  width: 4rem;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
-
-.navbar-nav .nav-link:hover {
-  background-color: rgba(22, 40, 237, 0.359);
-  border-radius: 0.5rem;
-  transition: background-color 0.2s ease;
-  color: rgba(255, 255, 255, 0.958);
-}
-
 /*Estilos Main Index*/
+.button-header {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
 .btn-grow {
   transition: transform 0.2s ease-in-out;
 }
@@ -456,6 +570,41 @@ blockquote {
   margin-top: 10px;
   font-size: 0.9em;
   color: #555;
+}
+
+.servicio-destacado {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.servicio-destacado h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #222;
+}
+.servicio-destacado p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+.servicio-destacado .btn {
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.servicio-destacado .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.servicio-destacado:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
 }
 
 /* Media queries*/

@@ -1,0 +1,40 @@
+.contacto-section {
+  background-color: #f8f9fa;
+
+  h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  p.lead {
+    color: #555;
+  }
+
+  label {
+    font-weight: 600;
+    color: #333;
+  }
+
+  input,
+  textarea {
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+  }
+
+  button.btn {
+    margin-top: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

@@ -52,3 +52,48 @@
     }
   }
 }
+
+/* 🔹 NUEVO: Sección introductoria */
+
+.intro-propiedades {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 4rem 1rem;
+
+  h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: #222;
+  }
+
+  p {
+    color: #555;
+  }
+
+  .btn {
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+/* 🔹 NUEVO: Mejora visual del listado (sin romper tu diseño) */
+
+#listado-propiedades {
+  background-color: #fff;
+  padding: 4rem 0;
+
+  .card-propiedades {
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}

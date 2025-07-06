@@ -47,10 +47,82 @@
    </section>
 
    </header>
-  
+<main>  <!-- CONTENIDO DEL BODY -->
+  <section class="contacto-section py-5">
+  <div class="container">
+    <div class="text-center mb-4" data-aos="fade-down">
+      <h1>Contactame</h1>
+      <p class="lead">¿Tenés una consulta? ¿Querés vender, comprar o alquilar? Dejá tu mensaje y te respondo a la brevedad.</p>
+    </div>
+
+    <form class="row g-3 mx-auto" style="max-width: 600px;" data-aos="fade-up">
+      <div class="col-md-6">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo" required>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="tucorreo@mail.com" required>
+      </div>
+      <div class="col-12">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" placeholder="+54 9 11 1234 5678">
+      </div>
+      <div class="col-12">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribí tu consulta..." required></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary px-5">Enviar</button>
+      </div>
+    </form>
+  </div>
+  </section>
+  <section class="my-5">
+  <div class="bg-light p-5 rounded shadow text-center" style="max-width: 800px; margin: auto;">
+    <h3 class="mb-4">Lo que dicen mis clientes</h3>
+
+    <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <blockquote class="animate__animated animate__fadeIn">
+            <p>"Facu me ayudó a vender mi departamento en menos de 2 meses. ¡Un genio!"</p>
+            <footer class="blockquote-footer">Martín P. <cite title="Barrio">Palermo</cite></footer>
+          </blockquote>
+        </div>
+
+        <div class="carousel-item">
+          <blockquote class="animate__animated animate__fadeIn">
+            <p>"Gracias a Facu encontré un alquiler justo a tiempo. ¡Súper profesional!"</p>
+            <footer class="blockquote-footer">Carla S. <cite title="Barrio">Caballito</cite></footer>
+          </blockquote>
+        </div>
+
+        <div class="carousel-item">
+          <blockquote class="animate__animated animate__fadeIn">
+            <p>"Excelente asesoramiento durante todo el proceso de compra. Recomendado 100%."</p>
+            <footer class="blockquote-footer">Luis R. <cite title="Barrio">Belgrano</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- Flechas de navegación -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+</main>
   
 
-<footer class="footer-principal">
+<footer class="footer-principal"> <!-- CONTENIDO DEL FOOTER -->
   <div class="container">
     <div class="footer-contenedor">
       <div class="footer-info">
