@@ -79,21 +79,27 @@
         <div class="servicio-destacado" data-aos="fade-up">
           <h4>Compra</h4>
           <p>Te acompaño en la búsqueda y negociación de tu próxima propiedad.</p>
+          <a href="./pages/servicios.html">
           <button class="btn btn-primary">Ver Más</button>
+           </a>
         </div>
       </div>
       <div class="col-12 col-md-4">
         <div class="servicio-destacado" data-aos="fade-up" data-aos-delay="100">
           <h4>Venta</h4>
           <p>Promociono y posiciono tu propiedad para lograr una venta rápida y segura.</p>
+           <a href="./pages/servicios.html">
           <button class="btn btn-primary">Ver Más</button>
+           </a>
         </div>
       </div>
       <div class="col-12 col-md-4">
         <div class="servicio-destacado" data-aos="fade-up" data-aos-delay="200">
           <h4>Alquiler</h4>
           <p>Encuentro inquilinos confiables o la mejor opción si buscás alquilar.</p>
+            <a href="./pages/servicios.html">
           <button class="btn btn-primary">Ver Más</button>
+           </a>
         </div>
       </div>
     </div>
@@ -110,22 +116,46 @@
       </div>
     </div>
   </section>
-<!-- Reviews-->
-  <section class="my-5">
-    <div class="bg-light p-5 rounded shadow text-center" style="max-width: 800px; margin: auto;">
-      <h3 class="mb-4">Lo que dicen mis clientes</h3>
-      <blockquote>
-        <p>"Facu me ayudó a vender mi departamento en menos de 2 meses ¡Un genio!"</p>
-        <footer class="blockquote-footer">Martin P. <cite title="Barrio">Palermo</cite></footer>
-      </blockquote>
-    </div>
-  </section>
+ <section class="my-5"> <!-- Carrusel reviews -->
+  <div class="bg-light p-5 rounded shadow text-center" style="max-width: 800px; margin: auto;">
+    <h3 class="mb-4">Lo que dicen mis clientes</h3>
 
-  <section class="my-5 bg-light p-4 text-center">
-    <h4>¿Listo para dar el siguiente paso?</h4>
-    <p>Estoy acá para ayudarte a tomar la mejor decisión inmobiliaria.</p>
-    <a href="./pages/contacto.html" class="btn btn-success">Contactame ahora</a>
-  </section>
+    <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <blockquote class="animate__animated animate__fadeIn">
+            <p>"Facu me ayudó a vender mi departamento en menos de 2 meses. ¡Un genio!"</p>
+            <footer class="blockquote-footer">Martín P. <cite title="Barrio">Palermo</cite></footer>
+          </blockquote>
+        </div>
+
+        <div class="carousel-item">
+          <blockquote class="animate__animated animate__fadeIn">
+            <p>"Gracias a Facu encontré un alquiler justo a tiempo. ¡Súper profesional!"</p>
+            <footer class="blockquote-footer">Carla S. <cite title="Barrio">Caballito</cite></footer>
+          </blockquote>
+        </div>
+
+        <div class="carousel-item">
+          <blockquote class="animate__animated animate__fadeIn">
+            <p>"Excelente asesoramiento durante todo el proceso de compra. Recomendado 100%."</p>
+            <footer class="blockquote-footer">Luis R. <cite title="Barrio">Belgrano</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- Flechas de navegación -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</section>
 </main>
  
 <footer class="footer-principal">
