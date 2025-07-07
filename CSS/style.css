@@ -186,6 +186,15 @@ body {
   filter: brightness(-50%);
 }
 
+@media (max-width: 991.98px) {
+  .bg-mobile-dark {
+    background-color: #000;
+    padding: 1rem;
+  }
+  .bg-mobile-dark .nav-link {
+    color: #fff !important;
+  }
+}
 .contacto-section {
   background-color: #f8f9fa;
 }

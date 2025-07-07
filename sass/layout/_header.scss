@@ -145,3 +145,13 @@ body {
   background-image: url(../media/Servicios.jpg);
   filter: brightness(-50%);
 }
+@media (max-width: 991.98px) {
+  .bg-mobile-dark {
+    background-color: #000; // fondo negro
+    padding: 1rem;
+
+    .nav-link {
+      color: #fff !important; // que los links se vean
+    }
+  }
+}

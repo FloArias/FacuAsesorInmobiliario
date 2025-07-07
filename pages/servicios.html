@@ -24,7 +24,7 @@
       <span class="navbar-toggler-icon"></span>
       </button>
     
-    <div class="collapse navbar-collapse" id="menuNavbar">
+    <div class="collapse navbar-collapse bg-mobile-dark" id="menuNavbar">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
         <li class="nav-item"><a class="nav-link" href="../pages/sobre-mi.html">Sobre mí</a></li>
@@ -90,31 +90,61 @@
     <a href="../pages/contacto.html" class="btn btn-outline-light">Contactame</a>
   </div>
   </section>
+  <!--separador -->
+  <hr class="my-5">
+
     <!-- Carrusel -->
-  <div id="propiedadesCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
-    <div class="carousel-inner text-center">
-      <h3 class="fw-bold my-4">Últimas Propiedades</h3>
+<div class="container mt-5">
+  <h2 class="text-center fw-bold mb-4"> Últimas Propiedades</h2>
+
+  <div id="propiedadesCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
 
       <div class="carousel-item active">
-        <img src="../media/ZonaSur.jpg" class="d-block w-100 img-fluid" alt="Imagen 1" />
+        <div class="card border-0 shadow-lg">
+          <img src="../media/ZonaSur.jpg" class="card-img-top img-fluid" alt="Zona Sur">
+          <div class="card-body text-center">
+            <h5 class="card-title">Zona Sur</h5>
+            <p class="card-text text-muted">Descubrí propiedades exclusivas en Zona Sur.</p>
+          </div>
+        </div>
       </div>
+
       <div class="carousel-item">
-        <img src="../media/ZonaNorte.jpg" class="d-block w-100 img-fluid" alt="Imagen 2" />
+        <div class="card border-0 shadow-lg">
+          <img src="../media/ZonaNorte.jpg" class="card-img-top img-fluid" alt="Zona Norte">
+          <div class="card-body text-center">
+            <h5 class="card-title">Zona Norte</h5>
+            <p class="card-text text-muted">Viví en el corazón de Zona Norte.</p>
+          </div>
+        </div>
       </div>
+
       <div class="carousel-item">
-        <img src="../media/CABA.jpg" class="d-block w-100 img-fluid" alt="Imagen 3" />
+        <div class="card border-0 shadow-lg">
+          <img src="../media/CABA.jpg" class="card-img-top img-fluid" alt="CABA">
+          <div class="card-body text-center">
+            <h5 class="card-title">CABA</h5>
+            <p class="card-text text-muted">Elegí tu próxima propiedad en CABA.</p>
+          </div>
+        </div>
       </div>
+
     </div>
 
     <button class="carousel-control-prev" type="button" data-bs-target="#propiedadesCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
+      <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"></span>
       <span class="visually-hidden">Anterior</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#propiedadesCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
+      <span class="carousel-control-next-icon bg-dark rounded-circle p-2"></span>
       <span class="visually-hidden">Siguiente</span>
     </button>
   </div>
+  </div>
+  <!--separador -->
+  <hr class="my-5">
+
   </main>
   
 <footer class="footer-principal"> <!-- CONTENIDO DEL FOOTER -->
