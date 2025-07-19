@@ -82,7 +82,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 2rem;
+  padding: 5rem;
   margin-top: 10rem;
   gap: 1.5rem;
 }
@@ -112,14 +112,16 @@ body {
   border: none;
   border-radius: 2rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 .button-header:hover {
-  background-color: rgba(22, 40, 237, 0.359); /* Un tono mas oscuro al pasar el mouse */
-  transform: scale(1.05); /* Efecto de agrandamiento sutil */
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4); /* Sombra mas marcada */
+  background-color: #1628ed;
+  color: rgba(255, 255, 255, 0.958);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
 }
 
 .introduccion-inicio {
